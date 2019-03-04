@@ -24,4 +24,17 @@ module.exports = {
         }
         return item;
     },
+    fail: (item) => {
+        if (item.enhancementCounter < 15) {
+            item.durability = item.durability - 5;
+        } else if (item.enhancementCounter >= 15) {
+            item.durability = item.durability - 10;
+        }
+        return item;
+    },
+
+    repair: (item) => {
+        item.durability = 100;
+        return item;
+    }
 }
