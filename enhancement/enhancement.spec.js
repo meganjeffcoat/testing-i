@@ -9,9 +9,9 @@ describe('items.js', () => {
             expect(enhancement.success(trident).enhancement).toEqual('+1');
         });
 
-        // test('change name to display enhancement', () => {
-        //     expect(enhancement.success(head).name).toContain('[+5] head');
-        // });
+        test('change name to display enhancement', () => {
+            expect(enhancement.success(head).name).toEqual('[+5] Head');
+        });
 
         test('enhancement at 16', () => {
             expect(enhancement.success(helm).enhancement).toEqual('PRI');
