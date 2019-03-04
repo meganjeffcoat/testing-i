@@ -9,8 +9,8 @@ const trident = {
     enhancementCounter: 0,
   }
 
-const head = {
-    name: 'Head',
+const medusa = {
+    name: 'Medusa',
     type: 'weapon',
     durability: 100,
     enhancement: null,
@@ -43,7 +43,7 @@ const achilles = {
 
 module.exports = {
     trident,
-    head,
+    medusa,
     helm,
     fleece,
     achilles,

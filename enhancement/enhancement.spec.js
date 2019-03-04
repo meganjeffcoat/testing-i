@@ -1,5 +1,5 @@
 const enhancement = require('./enhancement.js');
-const { trident, head, helm, achilles, fleece } = require('../items/items.js');
+const { trident, medusa, helm, achilles, fleece } = require('../items/items.js');
 
 describe('items.js', () => {
 
@@ -10,7 +10,7 @@ describe('items.js', () => {
         });
 
         test('change name to display enhancement', () => {
-            expect(enhancement.success(head).name).toEqual('[+5] Head');
+            expect(enhancement.success(medusa).name).toEqual('[+5] Medusa');
         });
 
         test('enhancement at 16', () => {
@@ -31,7 +31,7 @@ describe('items.js', () => {
     describe('the fail function', () => {
 
         test('durability of the item is decreased by 5 if the item`s enhancement is between 0 and 14', () => {
-            expect(enhancement.fail(head).durability).toEqual(95);
+            expect(enhancement.fail(medusa).durability).toEqual(95);
         })
 
         test('durability of the item is decreased by 10 if the item`s enhancement is greater than 14', () => {
