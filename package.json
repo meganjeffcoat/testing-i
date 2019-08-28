@@ -1,0 +1,14 @@
+{
+  "name": "testing-i",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/meganjeffcoat/testing-i.git",
+  "author": "Megan Jeffcoat",
+  "license": "MIT",
+  "scripts":{
+    "test": "jest --watch --verbose"
+  },
+  "devDependencies": {
+    "jest": "^24.1.0"
+  }
+}
